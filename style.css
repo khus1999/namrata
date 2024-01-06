@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ######################### Header styling  ##################### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+a:hover{
+    background: #c0392b;
+}
+#header{
+    color: #fff;
+    background: #e74c3c;
+}
+
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    display: inline-block;
+    
+}
+
+#menu li a{
+    color: #fff;
+    padding: 15px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+/* ################ About styling ################ */
+.section-header::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background: #cccccc;
+    bottom: 0;
+    border-radius: 0 0 5px 5px;
+    left: calc(50% - 50px);
+}
+
+/* ################ Service styling ################ */
+.section-header{
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-duration: 2s;
+    transform: perspective(2500px) rotateY(0);
+    backface-visibility: hidden;
+    transition-property: transform;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.section-header h2{
+    color: #666;
+    font-size: 26px;
+    margin: 0px 0px 15px;
+}
+.section-header p{
+    color: #000;
+    font-size: 20px;
+}
+
+/* <!-- #################### Call to Action Start #################### --> */
+.staffs{
+    color: #fff;
+    background: #e74c3c;
+}
+.call-to-action a{
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 50px;
+}
+/* <!-- ################# Counters Start ################## --> */
+.ion-md-person:before {
+    content: "";
+    display: inline-block;
+    font-family: "Ionicons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+/* ########################## Team Start ########################## */
+.team .team-item .team-social a i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.team .team-item .team-info {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+/* <!-- ################# Testimonials ################  --> */
+.testimonials{
+    background: #e74c3c;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+}
+.slide-col{
+    width: 450px;
+    height: 200px;
+    position: relative;
+}
+.media-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.media-image img{
+    height: 100%;
+    border-radius: 10px;
+}
+.media-body{
+    background: #2d3a59;
+    width: 290px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.media-body p{
+    font-size: 12px;
+    line-height: 16px;
+}
+.media-body h3{
+    margin: 5px;
+    color: #fff;
+}
+.container2{
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.btn1{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.active{
+    width: 45px;
+}
+.test{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ######################## Footer Sidebar Styling #################### */
+
+#footer-sidebar{
+    color: #fff;
+    background: #e74c3c;
+    /* padding: 20px 0; */
+}
+
+.footer-widget h4:after{
+    content: "";
+    background: #fff;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+
+.footer-widget a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.useful{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.useful li{
+    margin-bottom: 3px;
+}
+
+.about li:before{
+    content: "\f054";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+.useful li:before{
+content: "\f054";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+/* #################### FOOTER STYLING ############### */
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-linkks i{
+    margin: 2rem;
+}
